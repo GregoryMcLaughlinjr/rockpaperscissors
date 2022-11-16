@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------HEAD-------------------------------------------> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/normalize.css".css">
+    <link rel="stylesheet" href="css/index.css".css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+  </head>
+<!------------------------------BODY------------------------------------------->
+  <body>
+
+    <div id="gameContainer">
+
+      <h4 style="font-family: 'Shadows Into Light', cursive; font-weight: bold; margin-bottom: 30px; margin-top: 10px; font-size:50px;">Rock, Paper, Scissors</h4>
+      <div id="results">
+
+        <div id="youDiv">
+          You
+          <span id="results__score--you" data-your-score>0</span>
+        </div>
+
+        <div id="computerDiv">
+          Computer
+          <span id="results__score--computer" data-computer-score>0</span>
+        </div>
+
+      </div>
+
+      <div id="battlefield">
+
+        <div class="battlefieldPosition" id="yourBattlePosition">
+          <h2 class="selectionDisplay" id="yourSelectionDisplay">✊🏻</h2>
+        </div>
+        
+
+        <div class="battlefieldPosition" id="computerBattlePosition">
+          <h2 class="selectionDisplay" id="computerSelectionDisplay">✊🏻</h2>
+        </div>
+        
+      </div>
+
+      <div id="windisplay">
+      <h4 id="yourWinDisplay"></h4>
+      <h4 id="computerWinDisplay"></h4>
+      </div>
+
+      <h2 id="makeYourSelection">Make your Selection</h2>
+      <div class="selections">
+        <button class="selection" data-selection="rock" onclick="rock()">✊🏻</button>
+        <button class="selection" data-selection="paper" onclick="paper()">✋🏻</button>
+        <button class="selection" data-selection="scissors" onclick="scissors()">✌🏻</button>
+
+      </div>
+
+    </div>
+    
+  </body>
+</html>
+

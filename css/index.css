@@ -1,0 +1,129 @@
+body{
+  background-image: url(/images/backgrounds/wood.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#gameContainer{
+  background-image: url(/images/backgrounds/paperbackground.png);
+  background-size: cover;
+  width: 1000px;
+  height: 680px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#gameContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#battlefield{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.battlefieldPosition{
+  background: radial-gradient(white, rgb(231, 231, 231), rgb(208, 208, 208));
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+}
+
+.selectionDisplay{
+  font-size: 100px;
+}
+
+#yourBattlePosition{
+  margin-right: 20px;
+}
+
+#computerselectors{
+  height: 200px;
+}
+
+#windisplay{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 300px;
+font-family: 'Shadows Into Light', cursive;
+font-weight: 900;
+font-size: 25px;
+text-shadow: 10px 10px 30px black;
+}
+
+#makeYourSelection{
+font-family: 'Shadows Into Light', cursive;
+font-weight: bold;
+height: 40px;
+width: 300px;
+text-align: center;
+padding-top: 10px;
+text-shadow: 10px 10px 40px black;
+}
+
+.selection{
+  font-size: 100px;
+  border: none;
+  background: none;
+  transition: 100ms;
+  text-shadow: 10px 10px 20px black;
+}
+
+.selection:hover{
+  cursor: pointer;
+  opacity: 90%;
+  scale: 1.1;
+}
+
+#results{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0px;
+  text-shadow: 10px 10px 30px black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 500px
+
+}
+
+#youDiv{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 0px;
+  margin-left: 40px;
+}
+
+#results__score--you{
+font-weight: normal;
+font-size: 20px;
+}
+
+#computerDiv{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 130px;
+
+}
+
+#results__score--computer{
+font-weight: normal;
+font-size: 20px;
+}
+
+
+
+
